@@ -1,0 +1,9 @@
+services:
+  develop:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: memoolv/rpackage_template:latest
+    command: bash
+    volumes:
+      - $PWD:/workdir
